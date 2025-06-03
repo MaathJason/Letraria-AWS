@@ -1,4 +1,3 @@
-// Carrossel de livros
 document.addEventListener('DOMContentLoaded', () => {
     const carousel = document.querySelector('.carousel-items');
     const prevBtn = document.querySelector('.prev');
@@ -6,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.livro-card');
     
     let currentIndex = 0;
-    const cardWidth = 300 + 32; // Largura do card + gap
+    const cardWidth = 300 + 32; 
     const visibleCards = Math.floor((carousel.parentElement.offsetWidth - 100) / cardWidth);
     const maxIndex = Math.max(0, cards.length - visibleCards);
 
@@ -14,11 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const translateX = -currentIndex * cardWidth;
         carousel.style.transform = `translateX(${translateX}px)`;
         
-        // Atualiza estado dos botões
         prevBtn.disabled = currentIndex <= 0;
         nextBtn.disabled = currentIndex >= maxIndex;
 
-        // Atualiza visibilidade dos botões
         prevBtn.style.visibility = maxIndex > 0 ? 'visible' : 'hidden';
         nextBtn.style.visibility = maxIndex > 0 ? 'visible' : 'hidden';
     }
@@ -48,20 +45,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Atualiza o carrossel quando a janela é redimensionada
     window.addEventListener('resize', updateCarouselSize);
 
-    // Inicialização
     updateCarousel();
 });
 
-// Lousa Digital
 document.addEventListener('DOMContentLoaded', () => {
     const lousa = document.querySelector('.lousa');
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
     
-    // Configurar canvas
     canvas.width = lousa.offsetWidth;
     canvas.height = lousa.offsetHeight;
     canvas.style.cursor = 'crosshair';
@@ -71,7 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let lastX = 0;
     let lastY = 0;
 
-    // Configurar contexto
     ctx.strokeStyle = '#FFFFFF';
     ctx.lineJoin = 'round';
     ctx.lineCap = 'round';
@@ -103,7 +95,6 @@ document.addEventListener('DOMContentLoaded', () => {
     canvas.addEventListener('mouseout', () => isDrawing = false);
 });
 
-// Navbar fixa com efeito de scroll
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
@@ -115,7 +106,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Animação suave ao scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();

@@ -24,7 +24,6 @@ body {
     padding: 0 20px;
 }
 
-/* Navbar */
 .navbar {
     background: var(--white);
     padding: 1rem 0;
@@ -84,7 +83,6 @@ body {
     border-radius: 25px;
 }
 
-/* Hero Section */
 .hero {
     padding: 8rem 0 4rem;
     background: var(--light-bg);
@@ -114,7 +112,6 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Objetivos Section */
 .objetivos {
     padding: 6rem 0;
     text-align: center;
@@ -156,7 +153,6 @@ body {
     margin-bottom: 1rem;
 }
 
-/* Livros Section */
 .livros {
     padding: 6rem 0;
     background: var(--light-bg);
@@ -281,7 +277,6 @@ body {
     margin-right: 4px;
 }
 
-/* Lousa Digital */
 .lousa-digital {
     padding: 6rem 0;
     text-align: center;
@@ -302,7 +297,6 @@ body {
     position: relative;
 }
 
-/* Footer */
 footer {
     background: #333;
     color: var(--white);
@@ -334,7 +328,6 @@ footer {
     color: var(--white);
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .hero-content {
         grid-template-columns: 1fr;
