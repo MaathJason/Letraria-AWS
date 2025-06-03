@@ -98,6 +98,7 @@ body {
 .hero-text h1 {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
+    line-height: 1.2;
 }
 
 .hero-text p {
@@ -351,4 +352,18 @@ footer {
     .footer-content {
         grid-template-columns: 1fr;
     }
+}
+
+/* Logo colors - aplicado tanto para o header quanto para o h1 */
+.L, h1 .L { color: #FF0000; }
+.e, h1 .e { color: #FF7F00; }
+.t, h1 .t { color: #FFFF00; }
+.r, h1 .r { color: #00FF00; }
+.a, h1 .a { color: #0000FF; }
+.r2, h1 .r2 { color: #4B0082; }
+.i, h1 .i { color: #9400D3; }
+.a2, h1 .a2 { color: #FF1493; }
+
+.logo span, h1 span {
+    display: inline-block;
 } 

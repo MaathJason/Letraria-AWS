@@ -48,16 +48,6 @@ O site é totalmente responsivo e se adapta a diferentes tamanhos de tela:
 - Tablet (768px)
 - Mobile (480px)
 
-## 🔧 Como Executar
+## Link para o site no Amazon S3
 
-1. Clone o repositório
-2. Abra o arquivo `index.html` em seu navegador
-3. Para desenvolvimento, recomenda-se usar um servidor local (como Live Server do VS Code)
-
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## 👥 Contribuição
-
-Contribuições são sempre bem-vindas! Por favor, leia as [diretrizes de contribuição](CONTRIBUTING.md) primeiro. 
+- http://letraria-aws.s3-website-us-east-1.amazonaws.com/index.html
