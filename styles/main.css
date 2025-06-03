@@ -354,7 +354,6 @@ footer {
     }
 }
 
-/* Logo colors - aplicado tanto para o header quanto para o h1 */
 .L, h1 .L { color: #FF0000; }
 .e, h1 .e { color: #FF7F00; }
 .t, h1 .t { color: #FFFF00; }
